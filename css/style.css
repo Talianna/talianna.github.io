@@ -59,12 +59,10 @@ h1 {
     font-weight: 400;
     line-height: 36px;
     font-style: italic;
-
     position: absolute;
     top: 60px;
     left: 1100px;
 }
-
 
 .about {
     margin-top: 50px;
