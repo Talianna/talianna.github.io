@@ -13,10 +13,12 @@ body {
     border: 1px solid rgb(196, 196, 196);
 }
 
+
 header {
     height: 323px;
     background-image: url(../img/header_bg.jpg);
 }
+
 
 h1 {
     padding-top: 50px;
