@@ -353,7 +353,7 @@ textarea {
 }
 
 input[type=submit] {
-    background: #f85c37;
+    background: rgb(234, 67, 53);
     border: 0;
     border-radius: 5px;
     color: #fff;
