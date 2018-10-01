@@ -225,14 +225,12 @@ td {
     padding-right: 30px;
 }
 
-
 .instructorImg {
     width: 200px;
     float: left;
     margin-left: 90px;
     margin-top: 30px;
 }
-
 
 .contacts {
     background-color: rgb(243, 243, 243);
@@ -303,7 +301,6 @@ td {
 .contact_form {
     padding-top: 50px;
     background-color: rgba(0, 0, 0, 0.85);
-
 }
 
 form {}
@@ -311,7 +308,6 @@ form {}
 fieldset {
     border: none;
     padding-left: 160px;
-
 }
 
 input {
@@ -349,7 +345,6 @@ textarea {
     line-height: 125px;
     padding-left: 10px;
     background-color: rgb(243, 243, 243);
-
 }
 
 input[type=submit] {
@@ -365,8 +360,6 @@ input[type=submit] {
     float: right;
     margin-right: 170px;
 }
-
-
 
 footer {
     background-color: rgba(0, 0, 0, 0.85);
