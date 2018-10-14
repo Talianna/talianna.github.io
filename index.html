@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Айкидо в Куркино. Клуб айкидо Такемусу Айки</title>
+    <script src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
@@ -15,9 +18,9 @@
             <nav class="menu">
                 <ul>
                     <li><a href="#about">О клубе</a></li>
-                    <li><a href="#">Инструкторы</a></li>
-                    <li><a href="#">Расписание</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#instructors">Инструкторы</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <h1>Московский клуб традиционного Айкидо TAKEMUSU AIKI</h1>
@@ -54,22 +57,58 @@
                     </p>
                 </article>
             </section>
-            <section class="about">
-                <img class="clubPhoto" src="img/club.jpg" alt="club">
+            <section id="about">
+                <div class="your-class">
+                    <div><img src="img/club.jpg" alt="" width=600px></div>
+                    <div><img src="img/all.jpg" alt="" width=600px></div>
+                    <div><img src="img/DSC_3713.jpg" alt="" width=600px></div>
+                    <div><img src="img/DSC_3715.jpg" alt="" width=600px></div>
+                    <div><img src="img/DSC_3744.jpg" alt="" width=600px></div>
+                    <div><img src="img/all.jpg" alt="" width=600px></div>
+                </div>
+                <script src="slick/slick.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.your-class').slick({});
+                    });
+
+                </script>
+                <!--         <img class="clubPhoto" src="img/club.jpg" alt="club"> -->
                 <h3>О клубе</h3>
                 <p>
                     Московский клуб традиционного Айкидо &laquo;Ивама&raquo; Такемусу Айки был открыт Гуреевым Евгением (ныне 4 дан Айкидо Айкикай) в&nbsp;2000&nbsp;г. В&nbsp;нашем клубе практикуется работа с&nbsp;оружием (боккен, джо, танто) и&nbsp;без оружия. Студенты клуба имеют возможность посещать российские и&nbsp;международные семинары мастеров айкидо. За&nbsp;время существования клуба многие занимающиеся достигли высокого уровня мастерства и&nbsp;открыли собственные клубы Такемусу Айкидо. <br> <br>Такемусу Айкидо основано на&nbsp;таких реалистичных и&nbsp;осязаемых аспектах как совершенное равновесие, чувство времени и&nbsp;системе рычагов (физических принципах), которые каждый может постичь при условии достаточно длительных и&nbsp;жестких тренировок. Главная мысль стиля, представляемого Сайто Сенсеем, которую он&nbsp;хотел довести до&nbsp;вссех, что Айкидо&nbsp;&mdash; это разрушительная (смертоносная) форма самозащиты при правильном ее&nbsp;использовании. <br> <br>Мы&nbsp;&mdash; единственный официальный клуб Такемусу Айкидо в&nbsp;СЗАО и&nbsp;ЗАО г.&nbsp;Москвы.
                 </p>
             </section>
-            <section class="instructors">
-                <h3>ИНСТРУКТОРЫ</h3>
 
-                <img class="instructorImg" src="img/instructor_2.jpg" alt="instructor">
+            <section id="instructors">
+                <h3>ИНСТРУКТОРЫ</h3>
+                <img class="instructorImg" src="img/instructor_3.jpg" alt="instructor">
                 <p><b>Лисковец Павел</b><br><br>(2 Дан Айкидо Айкикай) - руководитель и инструктор клуба</p>
             </section>
-            <section class="schedule">
-                <h3>Расписание тренировок</h3>
-                <table>
+
+            <section id="schedule">
+                <h3 id="trening">Расписание тренировок</h3>
+                <div class="scheduleList">
+                    <div class="children">
+                        <h4>Детская группа <br> (5-9 лет)</h4>
+                        <p>вторник 18:00 - 19:00</p>
+                        <p>четверг 18:00 - 19:00</p>
+                        <p>суббота 12:00 - 13:00</p>
+                    </div>
+                    <div class="teens">
+                        <h4>Подростковая группа <br> (10-14 лет)</h4>
+                        <p>вторник 19:00 - 20:00</p>
+                        <p>четверг 19:00 - 20:00</p>
+                        <p>суббота 13:00 - 14:00</p>
+                    </div>
+                    <div class="adult">
+                        <h4>Взрослая группа <br> (с 15 лет)</h4>
+                        <p>вторник 20:00 - 21:30</p>
+                        <p>четверг 20:00 - 21:30</p>
+                        <p>воскресенье <br> <br> 17:00 - 18:30 (букиваза) <br> 18:30 - 20:00 (тай-джитсу)</p>
+                    </div>
+                </div>
+                <!--     <table>
                     <tr>
                         <th colspan="2">Детская группа (5-9 лет)</th>
                         <th colspan="2">Подростковая группа (10-14 лет)</th>
@@ -103,10 +142,11 @@
                         <td colspan="5"></td>
                         <td>18:30 - 20:00 (тай-джитсу)</td>
                     </tr>
-                </table>
+                </table> -->
 
             </section>
-            <section class="contacts">
+
+            <section id="contacts">
                 <h2>Контакты</h2>
 
                 <div class="contact">
@@ -115,21 +155,19 @@
                         <h4>Телефон</h4>
                         <p> +7 (916) 117-88-75</p>
                     </div>
-
                     <div class="address">
                         <img src="img/tag.png" alt="tag">
                         <h4>Наш адрес</h4>
                         <p>г. Москва, район Куркино, ул. Соколово-Мещерская 25<br> Школа единоборств "Красный Тигр"</p>
                     </div>
-
                     <div class="mail">
                         <img src="img/envelop.png" alt="envelop">
                         <h4>e-mail</h4>
                         <p>aikidokurkino@yandex.ru</p>
                     </div>
                 </div>
-
             </section>
+
             <section class="contact_form">
                 <form action="#">
                     <fieldset>
@@ -143,19 +181,42 @@
                     </fieldset>
                 </form>
             </section>
-            <section>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2236.6424792127414!2d37.3825231155385!3d55.903559480593906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b538c823e07155%3A0xb7d5d83a63f7ddc5!2z0KHQvtC60L7Qu9C-0LLQvi3QnNC10YnQtdGA0YHQutCw0Y8g0YPQuy4sIDI1LCDQnNC-0YHQutCy0LAsIDEyNTQ2Ng!5e0!3m2!1sru!2sru!4v1538054220796" width="1280" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </section>
 
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2236.6424792127414!2d37.3825231155385!3d55.903559480593906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b538c823e07155%3A0xb7d5d83a63f7ddc5!2z0KHQvtC60L7Qu9C-0LLQvi3QnNC10YnQtdGA0YHQutCw0Y8g0YPQuy4sIDI1LCDQnNC-0YHQutCy0LAsIDEyNTQ2Ng!5e0!3m2!1sru!2sru!4v1538054220796" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
         </main>
+
         <footer>
             <div class="copyright">
                 <p>Copyright &copy; 2018 Московский клуб традиционного Айкидо TAKEMUSU AIKI</p>
             </div>
         </footer>
 
-
     </div>
+    <a href="#" class="scrollup">Up</a>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+
+            $('.scrollup').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+
+        });
+
+    </script>
+
 </body>
 
 </html>
