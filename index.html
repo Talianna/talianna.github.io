@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-
+<!--<html lang="en">-->
 <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <title>MaybeBaby?</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--bootsprap-->
-    <!--    <link rel="stylesheet" href="lib/bootstrap-3.4.1-dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="lib/bootstrap-3.4.1-dist/css/bootstrap.min.css">
     <!--    свои стили-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -16,24 +16,69 @@
     <div class="container">
         <header>
             <div class="headerInside">
-                <div class="topMenu">
-                    <div class="menuInside">
-                        <img class="logo" src="img/Logo.png" alt="logo">
-                        <nav class="menu">
-                            <a href="#">Цель проекта</a>
-                            <a href="#">Наши преимущества</a>
-                            <a href="#">Поиск партнера</a>
-                            <a href="#">Блог</a>
-                            <a href="#">Отзывы</a>
-                        </nav>
-                        <a href="#" class="logIn">Войти | Регистрация</a>
-                        <div class="languages">
-                            <a href="#">Ru</a>
-                            <a href="#">Us</a>
-                            <a href="#">De</a>
+                <!--
+<div class="topMenu">
+    <div class="menuInside">
+        <img class="logo" src="img/Logo.png" alt="logo">
+        <nav class="menu">
+            <a href="#">Цель проекта</a>
+            <a href="#">Наши преимущества</a>
+            <a href="#">Поиск партнера</a>
+            <a href="#">Блог</a>
+            <a href="#">Отзывы</a>
+        </nav>
+        <a href="#" class="logIn">Войти | Регистрация</a>
+        <div class="languages">
+            <a href="#">Ru</a>
+            <a href="#">Us</a>
+            <a href="#">De</a>
+        </div>
+    </div>
+</div>
+-->
+
+                <nav class="navbar navbar-default topMenu">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                            <a class="navbar-brand" href="#"><img class="logo" src="img/Logo.png" alt="logo"></a>
                         </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav menu">
+                                <!--        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+                                <!--                                <li><a href="#">Link</a></li>-->
+                                <li><a href="#">Цель проекта</a></li>
+                                <li><a href="#">Наши преимущества</a></li>
+                                <li><a href="#">Поиск партнера</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                            </ul>
+
+                            <form class="navbar-form navbar-left">
+                                <button type="submit" class="btn btn-default logIn">Войти | Регистрация</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right languages">
+                                <!--                                <div class="languages">-->
+                                <li class="active"><a href="#">Ru<span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">Us</a></li>
+                                <li><a href="#">De</a></li>
+                                <!--                                </div>-->
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
                     </div>
-                </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
+
                 <div class="headerBackground">
                     <img src="img/thought_logo.png" alt="thought_logo">
                     <h1>Сервис поиска партнёра с целью рождения ребёнка</h1>
@@ -47,29 +92,30 @@
                     <h3>Наша цель</h3>
                     <p>Помочь людям, которые по различным причинам не имеют детей, но которые хотели бы их завести.</p>
                 </div>
-                <div class="babyForm">
-                    <div class="formTitle">
-                        <h3>MaybeBaby?</h3>
-                        <p>Твой надежный помощник в выборе подходящего партнера для рождения ребенка</p>
-                    </div>
-                    <form id="formForBaby" action="#" method="post">
-                        <input class="partner" list="gender" name="partner" placeholder="Выберите, кого бы вы хотели найти">
-                        <datalist id="gender">
-                           <option value="женщину">
-                           <option value="мужчину">
-                        </datalist>
-                        <input type="email" name="mail" placeholder="Ваша почта">
-                        <p>Регистрируясь, вы принимаете <a href="#">Пользовательское соглашение</a></p>
-                        <input type="submit" value="Продолжить регистрацию">
-                    </form>
-                    <div class="formBottom">
-                        <img class="line" src="img/Line.png" alt="line1">
-                        <p>Или</p>
-                        <img class="line" src="img/Line.png" alt="line2">
-                        <a href="#"><img class="VK" src="img/VK.png" alt="vkontakte"></a>
-                    </div>
-                </div>
+
             </section>
+            <div class="babyForm">
+                <div class="formTitle">
+                    <h3>MaybeBaby?</h3>
+                    <p>Твой надежный помощник в выборе подходящего партнера для рождения ребенка</p>
+                </div>
+                <form id="formForBaby" action="#" method="post">
+                    <input list="gender" placeholder="Выберите, кого бы вы хотели найти">
+                    <datalist id="gender">
+                           <option value="женщину">женщину</option>
+                           <option value="мужчину">мужчину</option>
+                        </datalist>
+                    <input type="email" name="mail" placeholder="Ваша почта">
+                    <p>Регистрируясь, вы принимаете <a href="#">Пользовательское соглашение</a></p>
+                    <input type="submit" value="Продолжить регистрацию">
+                </form>
+                <div class="formBottom">
+                    <img class="line" src="img/Line.png" alt="line1">
+                    <p>Или</p>
+                    <img class="line" src="img/Line.png" alt="line2">
+                    <a href="#"><img class="VK" src="img/VK.png" alt="vkontakte"></a>
+                </div>
+            </div>
             <section class="ourPossibility">
                 <img class="hand" src="img/hand.png" alt="hand">
                 <h3>Наши возможности</h3>
@@ -144,9 +190,9 @@
                         <input type="email" name="mail" placeholder="Ваша почта">
                         <input type="submit" value="Продолжить регистрацию">
                         <p>Регистрируясь, вы принимаете <a href="#">Пользовательское соглашение</a></p>
-
                     </form>
                 </div>
+                <!--                <img class="silhouettes" src="img/silhouettes.png" alt="silhouettes">-->
             </section>
             <section class="reviews">
                 <img class="review_icon" src="img/review_icon.png" alt="">
@@ -177,6 +223,10 @@
             <!--            </div>-->
         </footer>
     </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
 
 </html>
