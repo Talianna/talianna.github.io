@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
-/*
-* {
-    margin: 0;
-    padding: 0;
-}
-*/
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
@@ -26,9 +19,6 @@ body {
 }
 
 .container {
-    /*    width: 1920px;*/
-    /*    margin: 0 auto;/*/
-    /*    background: #E0ECF4;*/
 }
 
 .headerBackground {
@@ -46,7 +36,6 @@ body {
 
 .topMenu {
     background-color: #0187A4;
-    /*    height: 65px;*/
     position: relative;
 }
 
@@ -57,8 +46,6 @@ body {
 }
 
 .navbar {
-    /* position: relative; */
-    /* min-height: 50px; */
     margin-bottom: 0;
     border: none;
 }
@@ -76,18 +63,11 @@ body {
 */
 
 .navbar-brand {
-    /* float: left; */
-    /* height: 50px; */
     padding: 0;
-    /* font-size: 18px; */
-    /* line-height: 20px; */
 }
 
 .logo {
     float: left;
-    /*    margin-left: 60px;*/
-    /*    margin-top: 13px;*/
-    /*    margin-right: 27px;*/
     margin: 13px 27px 13px 60px;
 }
 
@@ -118,7 +98,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /*    width: 876px;*/
 }
 
 .menu li a {
@@ -133,14 +112,6 @@ body {
 
 .navbar-default .navbar-nav > li > a {
     color: #FFFFFF;
-    /*
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    display: block;
-    padding: 21px 23px 22px 23px;
-    line-height: 21px;
-*/
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -158,22 +129,9 @@ body {
     }
 }
 
-/*
-@media (min-width: 768px) and (max-width 991px) {
-    .navbar-right {
-        position: absolute;
-        top: 22px;
-        right: 50px;
-    }
-}
-*/
-
 .logIn {
-    /* position: absolute; */
     width: 200px;
     height: 30px;
-    /* right: 420px; */
-    /* top: 18px; */
     background: #38C172;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
@@ -184,7 +142,6 @@ body {
     text-decoration: none;
     cursor: pointer;
     padding: 0;
-    /*    margin-left: 200px;*/
     margin-top: 10px;
 }
 
@@ -209,13 +166,8 @@ body {
 }
 
 .languages {
-    /* position: relative; */
     width: 114px;
-    /* height: 19px; */
-    /* top: 22px; */
     display: flex;
-    /* justify-content: space-around; */
-    /* right: 250px; */
     margin-right: 50px;
 }
 
@@ -228,13 +180,6 @@ body {
     padding: 21px 10px 22px;
 }
 
-/*
-.languages a:hover {
-    font-weight: bold;
-    background: #039FC1;
-}
-*/
-
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
@@ -243,29 +188,11 @@ body {
     background-color: #039FC1;
 }
 
-/*
-@media (min-width: 992px) and (max-width 1199px) {
-    .logo {
-        float: left;
-        margin-left: 60px;
-    }
-}
-*/
-
 @media (min-width: 1200px) {
     .navbar-right {
         margin-right: 200px;
     }
 }
-
-/*
-@media (min-width: 768px) {
-    .navbar > .container .navbar-brand,
-    .navbar > .container-fluid .navbar-brand {
-        margin-left: 60px;
-    }
-}
-*/
 
 h1 {
     font-weight: normal;
@@ -280,7 +207,6 @@ h1 {
     height: 590px;
     margin-top: -94px;
     background-image: url(../img/fon_2.png);
-    /* padding-top: 10px; */
 }
 
 .thoughtCloud {
@@ -395,8 +321,6 @@ input[type="email"] {
 
 }
 
-/*#formForBaby */
-
 input[type="submit"] {
     width: 430px;
     height: 50px;
@@ -439,14 +363,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/*
-.ourPossibility {
-    height: 1963px;
-    margin-top: -25px;
-    background: url(../img/bg_3.png) center;
-    background-color: white;
-}*/
-
 .ourPossibility {
     /* height: 1963px; */
     /* margin-top: -25px; */
@@ -459,10 +375,8 @@ input[type="submit"] {
         height: 1963px;
         margin-top: -25px;
         background: url(../img/bg_3.png) center;
-        /*    background-color: white;*/
     }
 }
-
 
 .hand {
     display: block;
@@ -482,9 +396,7 @@ input[type="submit"] {
 
 .possibilityUnits {
     padding: 60px 20px;
-    /*    padding: 60px 130px;*/
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, 705px);
     grid-column-gap: 30px;
 }
@@ -501,34 +413,12 @@ input[type="submit"] {
     }
 }
 
-/*
-@media (max-width 768px) {
-    .possibilityUnits {
-        grid-template-columns: repeat(auto-fit, 300px);
-    }
-    .ourPossibility {
-        background-color: white;
-        height: 1963px;
-    }
-
-}
-*/
-
 .possibilityUnit {
     /* float: left; */
     /* width: calc(50% - 11px); */
     margin-top: 50px;
     height: 473px;
 }
-
-/*
-.possibilityUnit:nth-child(odd) {
-    margin-right: 11px;
-}
-
-.possibilityUnit:nth-child(even) {
-    margin-left: 11px;
-}*/
 
 .possibilityUnit img {
     float: left;
@@ -565,7 +455,6 @@ input[type="submit"] {
 }
 
 .findYourPartner {
-    /* height: 600px; */
     padding: 80px 80px 0;
     display: flex;
     flex-wrap: wrap;
@@ -574,42 +463,23 @@ input[type="submit"] {
 }
 
 .findYourPartner img {
-/*
-    display: block;
-    margin-bottom: -30px;
-*/
             display: none;
-
-    
 }
 
 @media (max-width: 991px) {
-/*
-    .findYourPartner img {
-        display: none;
-    }
-*/
     .findYourPartner {
         padding: 90px 135px 0;
-        /*        margin: 0 auto;*/
     }
 }
 
 @media (min-width 992px) and (max-width: 1199px) {
-/*
-    .findYourPartner img {
-        display: none;
-    }
-*/
     .findYourPartner {
         padding: 90px 240px 0;
-        /*        margin: 0 auto;*/
     }
 }
 
 @media (min-width: 1200px) {
     .findYourPartner img {
-/*        display: none;*/
             display: block;
     margin-bottom: -30px;
     }
@@ -617,7 +487,6 @@ input[type="submit"] {
         padding: 80px 465px 0 196px;
     }
 }
-
 
 .findYourPartner h3 {
     font-weight: normal;
@@ -655,8 +524,6 @@ input[type="submit"] {
     color: #000000;
 }
 
-/*.silhouettes {}*/
-
 .reviews {
     height: 701px;
     background: url(../img/bg_4.png);
@@ -681,8 +548,6 @@ input[type="submit"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*    padding: 0 250px;*/
-    /*    padding: 0 160px;*/
     padding: 0 60px;
     margin-top: 60px;
 }
@@ -729,7 +594,6 @@ input[type="submit"] {
 .backFace_2 {
     position: absolute;
     top: 10px;
-    /* left: 230px; */
     right: 0;
 }
 
