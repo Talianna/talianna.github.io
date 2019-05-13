@@ -1,651 +1,232 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #E5E5E5;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1920px;
-    }
-}
-
-@media (min-width: 0) {
-    .container {
-        background: #E0ECF4;
-        padding: 0;
-    }
-}
-
-.container {
-}
-
-.headerBackground {
-    height: 1024px;
-    background: url(../img/bg_1.png) no-repeat center center;
-    background-size: cover;
-}
-
-.headerBackground img {
-    display: block;
-    margin: 0 auto;
-    padding-top: 54px;
-    padding-right: 40px;
-}
-
-.topMenu {
-    background-color: #0187A4;
-    position: relative;
-}
-
-@media (max-width: 768px) {
-    .topMenu {
-        height: 65px;
-    }
-}
-
-.navbar {
-    margin-bottom: 0;
-    border: none;
-}
-
-@media (min-width: 768px) {
-    .navbar {
-        border-radius: 0;
-    }
-}
-
-/*
-.menuInside {
-    margin: 0 250px;
-}
-*/
-
-.navbar-brand {
-    padding: 0;
-}
-
-.logo {
-    float: left;
-    margin: 13px 27px 13px 60px;
-}
-
-@media (min-width: 1200px) {
-    .navbar > .container .navbar-brand,
-    .navbar > .container-fluid .navbar-brand {
-        margin-left: 200px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .navbar-nav {
-        margin-left: 35px;
-    }
-}
-
-/*
-@media (min-width: 768px) and (max-width: 991px) {
-    .navbar > .container-fluid .navbar-brand {
-        margin-left: 60px;
-    }
-}
-*/
-
-.menu {
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.menu li a {
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: normal;
-    text-decoration: none;
-    display: block;
-    padding: 21px 23px 22px 23px;
-    line-height: 21px;
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: #FFFFFF;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    background-color: #039FC1;
-    color: #FFFFFF;
-    font-weight: 700;
-}
-
-@media (min-width: 768px) {
-    .navbar-collapse {
-        padding-right: 0;
-    }
-    .container-fluid {
-        padding-right: 0;
-    }
-}
-
-.logIn {
-    width: 200px;
-    height: 30px;
-    background: #38C172;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.logIn:hover {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-@media (min-width: 1200px) {
-    .logIn {
-        margin-left: 200px;
-    }
-}
-
-.btn-default {
-    border: none;
-}
-
-.btn-default:hover {
-    background-color: #38C172;
-    border: none;
-}
-
-.languages {
-    width: 114px;
-    display: flex;
-    margin-right: 50px;
-}
-
-.languages > li > a {
-    font-size: 16px;
-    line-height: 25px;
-    display: block;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 21px 10px 22px;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-    color: #FFFFFF;
-    font-weight: bold;
-    background-color: #039FC1;
-}
-
-@media (min-width: 1200px) {
-    .navbar-right {
-        margin-right: 200px;
-    }
-}
-
-h1 {
-    font-weight: normal;
-    font-size: 36px;
-    align-items: center;
-    text-align: center;
-    color: #FE785B;
-    margin-top: -100px;
-}
-
-.ourGoal {
-    height: 590px;
-    margin-top: -94px;
-    background-image: url(../img/fon_2.png);
-}
-
-.thoughtCloud {
-    position: relative;
-    width: 392px;
-    height: 245px;
-    float: left;
-    margin-left: 299px;
-    margin-top: 80px;
-}
-
-.thoughtCloud h3 {
-    position: absolute;
-    left: 103px;
-    top: 35px;
-    font-weight: 500;
-    font-size: 36px;
-    text-align: center;
-    color: #606F7B;
-}
-
-.thoughtCloud p {
-    position: absolute;
-    width: 375px;
-    left: 10px;
-    top: 90px;
-    font-size: 22px;
-    text-align: center;
-    color: #606F7B;
-}
-
-.babyForm {
-    width: 500px;
-    height: 580px;
-    background: #E0ECF4;
-    border-radius: 20px;
-    margin: 0 auto;
-}
-
-@media (min-width: 1200px) {
-    .babyForm {
-        margin-top: -590px;
-    }
-}
-
-.formTitle {
-    height: 150px;
-    background: #0187A4;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.formTitle h3 {
-    padding-top: 30px;
-    font-weight: 500;
-    font-size: 36px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.formTitle p {
-    margin-top: 9px;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-#formForBaby {
-    margin: 35px;
-}
-
-/*#formForBaby */
-
-input {
-    width: 430px;
-    height: 50px;
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-
-/*#formForBaby */
-
-input[placeholder] {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: rgba(0, 0, 0, 0.45);
-    padding-left: 22px;
-}
-
-/*#formForBaby */
-
-input[type="email"] {
-    margin-top: 22px;
-    margin-bottom: 12px;
-}
-
-#formForBaby p {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-}
-
-#formForBaby a {
-    color: #000000;
-
-}
-
-input[type="submit"] {
-    width: 430px;
-    height: 50px;
-    background: #38C172;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    border: none;
-    margin-top: 26px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-.formBottom {
-    margin: 30px 35px;
-}
-
-.formBottom p {
-    width: 30.18px;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    display: inline-block;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.line {
-    width: 195px;
-    color: #C4C4C4;
-}
-
-.VK {
-    display: block;
-    margin: 18px auto 0;
-    cursor: pointer;
-}
-
-.ourPossibility {
-    /* height: 1963px; */
-    /* margin-top: -25px; */
-    /* background: url(../img/bg_3.png) center; */
-    background-color: white;
-}
-
-@media (min-width:1200px) {
-    .ourPossibility {
-        height: 1963px;
-        margin-top: -25px;
-        background: url(../img/bg_3.png) center;
-    }
-}
-
-.hand {
-    display: block;
-    margin: 0 auto;
-    padding-top: 40px;
-}
-
-.ourPossibility h3 {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: #4C749F;
-    margin-top: 25px;
-    margin-bottom: 30px;
-}
-
-.possibilityUnits {
-    padding: 60px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 705px);
-    grid-column-gap: 30px;
-}
-
-@media (min-width: 992px) {
-    .possibilityUnits {
-        padding: 60px 130px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .possibilityUnits {
-        padding: 60px 240px;
-    }
-}
-
-.possibilityUnit {
-    /* float: left; */
-    /* width: calc(50% - 11px); */
-    margin-top: 50px;
-    height: 473px;
-}
-
-.possibilityUnit img {
-    float: left;
-    width: inherit;
-}
-
-.unitTextfield {
-    height: inherit;
-    border-radius: 20px;
-    border-top-left-radius: 180px;
-    border-bottom-right-radius: 150px;
-    margin: 0 22px;
-    background: #F3F6F4;
-}
-
-.possibilityUnit h4 {
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-    color: #0187A4;
-}
-
-.possibilityUnit p {
-    width: 384px;
-    display: block;
-    margin: 0 auto;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #000000;
-    margin-top: 28px;
-}
-
-.findYourPartner {
-    padding: 80px 80px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.findYourPartner img {
-            display: none;
-}
-
-@media (max-width: 991px) {
-    .findYourPartner {
-        padding: 90px 135px 0;
-    }
-}
-
-@media (min-width 992px) and (max-width: 1199px) {
-    .findYourPartner {
-        padding: 90px 240px 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    .findYourPartner img {
-            display: block;
-    margin-bottom: -30px;
-    }
-    .findYourPartner {
-        padding: 80px 465px 0 196px;
-    }
-}
-
-.findYourPartner h3 {
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    color: #000000;
-    margin-bottom: 40px;
-}
-
-.partnerForm {
-    width: 475px;
-    height: 500px;
-}
-
-#formForPartner input {
-    width: 475px;
-}
-
-#formForPartner input[type="submit"] {
-    box-shadow: 5px 4px 5px rgba(111, 207, 178, 0.5);
-    border-radius: 5px;
-}
-
-#formForPartner p {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-    margin-top: 19px;
-}
-
-#formForPartner a {
-    color: #000000;
-}
-
-.reviews {
-    height: 701px;
-    background: url(../img/bg_4.png);
-}
-
-.review_icon {
-    display: block;
-    margin: 0 auto;
-    padding-top: 35px;
-}
-
-.reviews h3 {
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 30px;
-}
-
-.review {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 60px;
-    margin-top: 60px;
-}
-
-@media (min-width 992px) and (max-width 1199px) {
-    .review {
-        padding: 0 150px;
-    }
-}
-
-@media (min-width 1200px) {
-    .review {
-        padding: 0 250px;
-    }
-}
-
-.arrow {
-    padding: 6px;
-    cursor: pointer;
-}
-
-.arrowLeft {
-    transform: rotate(180deg);
-}
-
-.photoGroup {
-    position: relative;
-    height: 222px;
-    width: 430px;
-}
-
-.frontFace {
-    position: absolute;
-    top: 0;
-    left: 110px;
-}
-
-.backFace_1 {
-    position: absolute;
-    top: 10px;
-    left: 0;
-}
-
-.backFace_2 {
-    position: absolute;
-    top: 10px;
-    right: 0;
-}
-
-.textBlock {
-    width: 577px;
-    display: block;
-    margin: 0 auto;
-}
-
-.textBlock h5 {
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 25px;
-}
-
-.textBlock p {
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 20px;
-}
-
-.textBlock img {
-    display: block;
-    margin: 30px auto 0;
-}
-
-footer {
-    position: relative;
-    height: 114px;
-    background-color: #FFFFFF;
-}
-
-.footerInside {
-    height: inherit;
-}
-
-footer img {
-    position: absolute;
-    top: -30px;
-    left: calc(50% - 30px);
-}
-
-footer p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 114px;
-    text-align: center;
-    color: #606F7B;
-}
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MaybeBaby?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootsprap-->
+    <link rel="stylesheet" href="lib/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <!--    свои стили-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="headerInside">
+                <!--
+<div class="topMenu">
+    <div class="menuInside">
+        <img class="logo" src="img/Logo.png" alt="logo">
+        <nav class="menu">
+            <a href="#">Цель проекта</a>
+            <a href="#">Наши преимущества</a>
+            <a href="#">Поиск партнера</a>
+            <a href="#">Блог</a>
+            <a href="#">Отзывы</a>
+        </nav>
+        <a href="#" class="logIn">Войти | Регистрация</a>
+        <div class="languages">
+            <a href="#">Ru</a>
+            <a href="#">Us</a>
+            <a href="#">De</a>
+        </div>
+    </div>
+</div>
+-->
+
+                <nav class="navbar navbar-default topMenu">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                            <a class="navbar-brand" href="#"><img class="logo" src="img/Logo.png" alt="logo"></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav menu">
+                                <!--        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+                                <!--                                <li><a href="#">Link</a></li>-->
+                                <li><a href="#">Цель проекта</a></li>
+                                <li><a href="#">Наши преимущества</a></li>
+                                <li><a href="#">Поиск партнера</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                            </ul>
+
+                            <form class="navbar-form navbar-left">
+                                <button type="submit" class="btn btn-default logIn">Войти | Регистрация</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right languages">
+                                <!--                                <div class="languages">-->
+                                <li class="active"><a href="#">Ru<span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">Us</a></li>
+                                <li><a href="#">De</a></li>
+                                <!--                                </div>-->
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
+
+                <div class="headerBackground">
+                    <img src="img/thought_logo.png" alt="thought_logo">
+                    <h1>Сервис поиска партнёра с целью рождения ребёнка</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="ourGoal">
+                <div class="thoughtCloud">
+                    <img src="img/cloud.png" alt="cloud">
+                    <h3>Наша цель</h3>
+                    <p>Помочь людям, которые по различным причинам не имеют детей, но которые хотели бы их завести.</p>
+                </div>
+
+            </section>
+            <div class="babyForm">
+                <div class="formTitle">
+                    <h3>MaybeBaby?</h3>
+                    <p>Твой надежный помощник в выборе подходящего партнера для рождения ребенка</p>
+                </div>
+                <form id="formForBaby" action="#" method="post">
+                    <input list="gender" placeholder="Выберите, кого бы вы хотели найти">
+                    <datalist id="gender">
+                           <option value="женщину">женщину</option>
+                           <option value="мужчину">мужчину</option>
+                        </datalist>
+                    <input type="email" name="mail" placeholder="Ваша почта">
+                    <p>Регистрируясь, вы принимаете <a href="#">Пользовательское соглашение</a></p>
+                    <input type="submit" value="Продолжить регистрацию">
+                </form>
+                <div class="formBottom">
+                    <img class="line" src="img/Line.png" alt="line1">
+                    <p>Или</p>
+                    <img class="line" src="img/Line.png" alt="line2">
+                    <a href="#"><img class="VK" src="img/VK.png" alt="vkontakte"></a>
+                </div>
+            </div>
+            <section class="ourPossibility">
+                <img class="hand" src="img/hand.png" alt="hand">
+                <h3>Наши возможности</h3>
+                <div class="possibilityUnits">
+                    <div class="possibilityUnit">
+                        <a href="#"><img src="img/unit_1.png" alt="confidentiality"></a>
+                        <div class="unitTextfield">
+                            <h4>Конфиденциальность</h4>
+                            <p>
+                                Мы защитим ваши персональные данные на нашем сайте, доступ к вашей анкете будет только у зарегистрированных и проверенных пользователей.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="possibilityUnit">
+                        <a href="#"><img src="img/unit_2.png" alt="convenience"></a>
+                        <div class="unitTextfield">
+                            <h4>Удобство</h4>
+                            <p>
+                                Сервис позволяет быстро подобрать подходящего партнера, который соответствует вашим требованиям как на платной, так и на коммерческой основе.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="possibilityUnit">
+                        <a href="#"><img src="img/unit_3.png" alt="benefit"></a>
+                        <div class="unitTextfield">
+                            <h4>Выгода</h4>
+                            <p>
+                                При оплате сервиса вы также получаете скидки на прохождение обследований и проведение мед. процедур в ведущих медицинских центрах вашего региона.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="possibilityUnit">
+                        <a href="#"><img src="img/unit_4.png" alt="support"></a>
+                        <div class="unitTextfield">
+                            <h4>Наша поддержка</h4>
+                            <p>
+                                Мы уважаем и хотим помочь каждому пользователю на нашем сайте! Поэтому, если у вас есть вопросы и предложения, мы ответим на них максимально оперативно.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="possibilityUnit">
+                        <a href="#"><img src="img/unit_5.png" alt="reliability"></a>
+                        <div class="unitTextfield">
+                            <h4>Надежность</h4>
+                            <p>
+                                Вы можете доверять актуальности данных на сайте; кроме этого производится персональная верификация пользователей (модераторы осуществляют проверку персональных данных по документам удостоверяющим личность).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="possibilityUnit">
+                        <a href="#"><img src="img/unit_6.png" alt="base"></a>
+                        <div class="unitTextfield">
+                            <h4>Большая партнерская база</h4>
+                            <p>
+                                Мы рады предложить Вам обширную базу партнеров по всей России, а также это Беларусь, Украина, Казахстан. Мы уверены, что если вы нашли друг друга, то расстояние это не препятствие для достижения заветной цели! </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="findYourPartner">
+                <img class="silhouettes" src="img/silhouettes.png" alt="silhouettes">
+
+                <div class="partnerForm">
+                    <h3>Найди своего <br> идеального партнера</h3>
+
+                    <form id="formForPartner" action="#" method="post">
+                        <input class="partner" list="gender" name="partner" placeholder="Выберите, кого бы вы хотели найти">
+                        <datalist id="gender">
+                           <option value="женщину">
+                           <option value="мужчину">
+                        </datalist>
+                        <input type="email" name="mail" placeholder="Ваша почта">
+                        <input type="submit" value="Продолжить регистрацию">
+                        <p>Регистрируясь, вы принимаете <a href="#">Пользовательское соглашение</a></p>
+                    </form>
+                </div>
+                <!--                <img class="silhouettes" src="img/silhouettes.png" alt="silhouettes">-->
+            </section>
+            <section class="reviews">
+                <img class="review_icon" src="img/review_icon.png" alt="">
+                <h3>Отзывы наших клиентов</h3>
+                <div class="review">
+                    <a href="#"><img class="arrow arrowLeft" src="img/arrow.png" alt="arrow"></a>
+                    <div class="photoGroup">
+                        <img class="backFace_1" src="img/face_2.png" alt="backFace_1">
+                        <img class="backFace_2" src="img/face_2.png" alt="backFace_2">
+                        <img class="frontFace" src="img/face_1.png" alt="frontFace">
+                    </div>
+                    <a href="#"><img class="arrow" src="img/arrow.png" alt="arrow"></a>
+                </div>
+                <div class="textBlock">
+                    <h5 class="personName">Andre Simpson</h5>
+                    <p class="textReview">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    </p>
+                    <img src="img/quotes.png" alt="">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="img/logo_sm.png" alt="logo_small">
+            <!--            <div class="footerInside">-->
+
+            <p>&copy; www.maybebaby.club, 2018</p>
+            <!--            </div>-->
+        </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+
+</html>
