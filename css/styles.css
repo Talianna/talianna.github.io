@@ -479,7 +479,7 @@ input[type="submit"] {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .possibilityUnits {
         padding: 60px 130px;
     }
