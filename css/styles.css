@@ -18,6 +18,8 @@ body {
     }
 }
 
+/*header*/
+
 .headerBackground {
     height: 1024px;
     background: url(../img/bg_1.png) no-repeat 47% 50%;
@@ -31,32 +33,14 @@ body {
     padding-right: 40px;
 }
 
-@media (max-width: 991px) {
-    .headerBackground img {
-        display: none;
-    }
-}
-
 .topMenu {
     background-color: #0187A4;
     position: relative;
 }
 
-@media (max-width: 767px) {
-    .topMenu {
-        height: 65px;
-    }
-}
-
 .navbar {
     margin-bottom: 0;
     border: none;
-}
-
-@media (min-width: 768px) {
-    .navbar {
-        border-radius: 0;
-    }
 }
 
 .navbar-brand {
@@ -66,25 +50,6 @@ body {
 .logo {
     float: left;
     margin: 13px 27px 13px 27px;
-}
-
-@media (min-width: 768px) {
-    .logo {
-        margin: 13px 27px 13px 60px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .navbar > .container .navbar-brand,
-    .navbar > .container-fluid .navbar-brand {
-        margin-left: 200px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .navbar-nav {
-        margin-left: 35px;
-    }
 }
 
 .menu {
@@ -115,15 +80,6 @@ body {
     font-weight: 700;
 }
 
-@media (min-width: 768px) {
-    .navbar-collapse {
-        padding-right: 0;
-    }
-    .container-fluid {
-        padding-right: 0;
-    }
-}
-
 .logIn {
     width: 200px;
     height: 30px;
@@ -143,12 +99,6 @@ body {
 .logIn:hover {
     color: #FFFFFF;
     text-decoration: none;
-}
-
-@media (min-width: 1200px) {
-    .logIn {
-        margin-left: 200px;
-    }
 }
 
 .btn-default {
@@ -183,18 +133,6 @@ body {
     background-color: #039FC1;
 }
 
-@media (min-width: 1200px) {
-    .navbar-right {
-        margin-right: 200px;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar-collapse {
-        background-color: #039FC1;
-    }
-}
-
 h1 {
     font-weight: normal;
     font-size: 36px;
@@ -204,18 +142,63 @@ h1 {
     margin-top: -100px;
 }
 
+@media (min-width: 1200px) {
+    .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand {
+        margin-left: 200px;
+    }
+    .logIn {
+        margin-left: 200px;
+    }
+    .navbar-right {
+        margin-right: 200px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-nav {
+        margin-left: 35px;
+    }
+}
+
 @media (max-width: 991px) {
+    .headerBackground img {
+        display: none;
+    }
     h1 {
         padding: 70px 160px 0;
         margin: 0;
     }
 }
 
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+    .logo {
+        margin: 13px 27px 13px 60px;
+    }
+    .navbar-collapse {
+        padding-right: 0;
+    }
+    .container-fluid {
+        padding-right: 0;
+    }
+}
+
 @media (max-width: 767px) {
+    .topMenu {
+        height: 65px;
+    }
     h1 {
         padding: 70px 15px 0;
     }
+    .navbar-collapse {
+        background-color: #039FC1;
+    }
 }
+
+/*ourGoal*/
 
 .ourGoal {
     height: 590px;
@@ -248,52 +231,12 @@ h1 {
     color: #606F7B;
 }
 
-@media (max-width: 767px) {
-    .ourGoal {
-        background: url(../img/fon_2.png) no-repeat center;
-        margin-top: -94px;
-    }
-    .thoughtCloud {
-        margin: 0 auto;
-        padding: 0 30px;
-        float: none;
-    }
-    .thoughtCloud img {
-        display: none;
-    }
-
-    .thoughtCloud h3 {
-        text-align: center;
-        color: #ffffff;
-        padding-top: 120px;
-        position: static;
-    }
-    .thoughtCloud p {
-        position: static;
-        color: #ffffff;
-        margin-top: 70px;
-    }
-}
-
 .babyForm {
     width: 500px;
     height: 580px;
     background: #E0ECF4;
     border-radius: 20px;
     margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-    .babyForm {
-        width: 300px;
-    }
-}
-
-
-@media (min-width: 1200px) {
-    .babyForm {
-        margin-top: -590px;
-    }
 }
 
 .formTitle {
@@ -359,7 +302,6 @@ input[type="email"] {
 
 }
 
-
 input[type="submit"] {
     width: 430px;
     height: 50px;
@@ -402,7 +344,40 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+@media (min-width: 1200px) {
+    .babyForm {
+        margin-top: -590px;
+    }
+}
+
 @media (max-width: 767px) {
+    .ourGoal {
+        background: url(../img/fon_2.png) no-repeat center;
+        margin-top: -94px;
+    }
+    .thoughtCloud {
+        margin: 0 auto;
+        padding: 0 30px;
+        float: none;
+    }
+    .thoughtCloud img {
+        display: none;
+    }
+
+    .thoughtCloud h3 {
+        text-align: center;
+        color: #ffffff;
+        padding-top: 120px;
+        position: static;
+    }
+    .thoughtCloud p {
+        position: static;
+        color: #ffffff;
+        margin-top: 70px;
+    }
+    .babyForm {
+        width: 300px;
+    }
     input {
         width: 300px;
     }
@@ -427,16 +402,11 @@ input[type="submit"] {
     }
 }
 
+/*ourPossibility section*/
+
 .ourPossibility {
     margin-top: -25px;
     background-color: white;
-}
-
-@media (min-width:1200px) {
-    .ourPossibility {
-        height: 1963px;
-        background: url(../img/bg_3.png) center;
-    }
 }
 
 .hand {
@@ -489,7 +459,6 @@ input[type="submit"] {
 }
 
 .possibilityUnit p {
-    /*    width: 384px;*/
     display: block;
     margin: 0 auto;
     font-weight: 300;
@@ -500,8 +469,23 @@ input[type="submit"] {
     margin-top: 28px;
 }
 
-@media (max-width: 767px) {
+@media (min-width:1200px) {
+    .ourPossibility {
+        height: 1963px;
+        background: url(../img/bg_3.png) center;
+    }
+    .possibilityUnits {
+        padding: 60px 240px;
+    }
+}
 
+@media (min-width: 992px) {
+    .possibilityUnits {
+        padding: 60px 130px;
+    }
+}
+
+@media (max-width: 767px) {
     .possibilityUnits {
         grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
         padding: 10px 10px 50px;
@@ -519,46 +503,16 @@ input[type="submit"] {
     .possibilityUnit {
         height: 420px;
     }
-
     .unitTextfield {
         border-top-left-radius: 0;
         border-bottom-right-radius: 100px;
     }
 }
 
-@media (min-width: 992px) {
-    .possibilityUnits {
-        padding: 60px 130px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .possibilityUnits {
-        padding: 60px 240px;
-    }
-}
+/*findYourPartner section*/
 
 .findYourPartner img {
     display: none;
-}
-
-@media (max-width: 767px) {
-    .findYourPartner {}
-
-}
-
-@media (min-width: 1200px) {
-    .findYourPartner img {
-        display: block;
-        margin-bottom: -30px;
-    }
-    .findYourPartner {
-        padding: 80px 465px 0 196px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
 }
 
 .findYourPartner h3 {
@@ -577,22 +531,8 @@ input[type="submit"] {
 }
 
 #formForPartner input {
-    /*    width: 300px;*/
     width: 475px;
 
-}
-
-@media (max-width: 767px) {
-    .partnerForm {
-        width: 300px;
-    }
-    #formForPartner input {
-        width: 300px;
-
-    }
-    .findYourPartner h3 {
-        text-align: center;
-    }
 }
 
 #formForPartner input[type="submit"] {
@@ -613,6 +553,36 @@ input[type="submit"] {
 #formForPartner a {
     color: #000000;
 }
+
+@media (min-width:1200px) {
+    .findYourPartner img {
+        display: block;
+        margin-bottom: -30px;
+    }
+    .findYourPartner {
+        padding: 80px 465px 0 196px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 767px) {
+    .partnerForm {
+        width: 300px;
+    }
+    #formForPartner input {
+        width: 300px;
+
+    }
+    .findYourPartner h3 {
+        text-align: center;
+    }
+}
+
+
+/*reviews section*/
 
 .reviews {
     height: 701px;
@@ -640,18 +610,6 @@ input[type="submit"] {
     align-items: center;
     padding: 0 60px;
     margin-top: 60px;
-}
-
-@media (min-width 992px) and (max-width 1199px) {
-    .review {
-        padding: 0 150px;
-    }
-}
-
-@media (min-width 1200px) {
-    .review {
-        padding: 0 250px;
-    }
 }
 
 .arrow {
@@ -716,16 +674,26 @@ input[type="submit"] {
     margin: 30px auto 0;
 }
 
+@media (min-width 1200px) {
+    .review {
+        padding: 0 250px;
+    }
+}
+
+@media (min-width 992px) and (max-width 1199px) {
+    .review {
+        padding: 0 150px;
+    }
+}
+
 @media (max-width: 767px) {
     .frontFace {
         margin-top: 10px;
         position: static;
-
     }
     .backFace_1 {
         display: none;
     }
-
     .backFace_2 {
         display: none;
     }
@@ -749,6 +717,8 @@ input[type="submit"] {
         height: 770px;
     }
 }
+
+/*footer*/
 
 footer {
     position: relative;
