@@ -299,7 +299,6 @@ input[type="email"] {
 
 #formForBaby a {
     color: #000000;
-
 }
 
 input[type="submit"] {
@@ -383,18 +382,15 @@ input[type="submit"] {
     }
     #formForBaby {
         margin: 35px 0 0;
-
     }
     input[type="submit"] {
         width: 300px;
     }
-
     .line {
         display: none;
     }
     .formBottom p {
         display: none;
-
     }
     .formTitle p {
         font-size: 16px;
