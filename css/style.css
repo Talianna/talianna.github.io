@@ -793,11 +793,12 @@ p.addressLA {
 
 /*header*/
 
-.header2 {
+.productPageHead {
+    padding-top: 63px;
     height: 190px;
 }
 
-.header2 .logo {
+.productPageHead .logo {
     padding-left: 98px;
 }
 
@@ -805,7 +806,7 @@ p.addressLA {
     line-height: 38px;
 }
 
-.productmenu1 {
+.productPageMenu {
     margin-top: 50px;
     height: 71px;
     background-image: url(../img/header_back.jpg);
@@ -814,12 +815,12 @@ p.addressLA {
     align-items: center;
 }
 
-.productmenu1 li {
+.productPageMenu li {
     list-style-type: none;
     float: left;
 }
 
-.productmenu1 li a {
+.productPageMenu li a {
     text-decoration: none;
     display: block;
     padding-right: 15px;
@@ -829,7 +830,7 @@ p.addressLA {
     font-weight: 700;
 }
 
-.productmenu1 li a:hover {
+.productPageMenu li a:hover {
     color: #212121;
     font-size: 18px;
     font-weight: 700;
