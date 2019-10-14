@@ -19,17 +19,15 @@ body {
 .header {
     height: 800px;
     padding-top: 63px;
-    background: url(img/slider-img.jpg) no-repeat;
+    background: url(../img/slider-img.jpg) no-repeat;
 }
 
 .logo {
-    /*    margin-top: 63px;*/
     padding-left: 98px;
 }
 
 .menu {
     float: right;
-    /*    margin-top: 67px;*/
     margin-right: 167px;
 }
 
@@ -61,7 +59,6 @@ body {
     margin-top: 288px;
     padding: 0px;
     padding-left: 98px;
-
 }
 
 .fishnetChair h3 {
@@ -107,7 +104,7 @@ body {
 }
 
 .fishnetChair a:hover {
-    background: #ffffff url('img/arrow.png') no-repeat 173px 16px;
+    background: #ffffff url('../img/arrow.png') no-repeat 173px 16px;
 }
 
 .navi {
@@ -144,7 +141,6 @@ body {
     font-weight: 700;
 }
 
-
 .featuredNew .active {
     color: #212121;
     border-bottom: 3px solid #212121;
@@ -170,7 +166,7 @@ body {
 
 .exploreAll:hover {
     padding-top: 18px;
-    background: url(img/arrow.png) no-repeat 186px 22px;
+    background: url(../img/arrow.png) no-repeat 186px 22px;
 }
 
 /*featuredProducts list*/
@@ -189,8 +185,6 @@ body {
 .list ul li:nth-child(4) {
     padding-right: 0;
 }
-
-.listflow {}
 
 .listflow .iconHover {
     border-radius: 50%;
@@ -233,19 +227,19 @@ body {
 }
 
 .list ul li:nth-child(1) {
-    background: url(img/product-1.jpg) no-repeat;
+    background: url(../img/product-1.jpg) no-repeat;
 }
 
 .list ul li:nth-child(2) {
-    background: url(img/product-2.jpg) no-repeat;
+    background: url(../img/product-2.jpg) no-repeat;
 }
 
 .list ul li:nth-child(3) {
-    background: url(img/product-3.jpg) no-repeat;
+    background: url(../img/product-3.jpg) no-repeat;
 }
 
 .list ul li:nth-child(4) {
-    background: url(img/product-4.jpg) no-repeat;
+    background: url(../img/product-4.jpg) no-repeat;
 }
 
 .list a {
@@ -272,11 +266,11 @@ body {
 }
 
 .redChair {
-    background-image: url(img/promo-img1.jpg);
+    background-image: url(../img/promo-img1.jpg);
 }
 
 .woodenChair {
-    background-image: url(img/promo-img.jpg);
+    background-image: url(../img/promo-img.jpg);
 }
 
 .exclusiveDesc {
@@ -331,7 +325,7 @@ body {
 }
 
 .exclusiveDesc a:hover {
-    background: #ffffff url('img/arrow.png') no-repeat 173px 16px;
+    background: #ffffff url('../img/arrow.png') no-repeat 173px 16px;
 }
 
 /*trendingProducts*/
@@ -363,8 +357,7 @@ body {
 
 .slider {
     height: 800px;
-    background-image: url(img/slider.jpg);
-    /*    margin-top: 120px;*/
+    background-image: url(../img/slider.jpg);
 }
 
 .sliderDesc {
@@ -416,7 +409,7 @@ body {
 }
 
 .sliderDesc a:hover {
-    background: #ffffff url('img/arrow.png') no-repeat 173px 16px;
+    background: #ffffff url('../img/arrow.png') no-repeat 173px 16px;
 }
 
 /*exclusiveProduct*/
@@ -438,7 +431,7 @@ body {
 .productLg {
     width: 570px;
     height: 570px;
-    background-image: url(img/product-1-lg.jpg);
+    background-image: url(../img/product-1-lg.jpg);
 }
 
 .productLgDesc {
@@ -493,20 +486,18 @@ body {
 }
 
 .productLgDesc a:hover {
-    background: #ffffff url('img/arrow.png') no-repeat 173px 16px;
+    background: #ffffff url('../img/arrow.png') no-repeat 173px 16px;
 }
 
 /*footer*/
 
 .top {
     height: 516px;
-    background-image: url(img/back-img.jpg);
+    background-image: url(../img/back-img.jpg);
 }
 
 .footer .bottom {
-    /*    height: 384px;*/
     background-color: #f7f7f7;
-    /*    background-image: url(img/footer-back.jpg);*/
 }
 
 .footerTopDesc {
@@ -570,7 +561,6 @@ body {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    /*    margin-bottom: 33px;*/
 }
 
 .mail {
@@ -633,7 +623,7 @@ input[type=submit] {
     position: absolute;
     right: 0;
     color: #ffffff;
-    background: url(img/send.png) no-repeat 10px 14px;
+    background: url(../img/send.png) no-repeat 10px 14px;
     border: none;
     cursor: pointer;
     background-color: #ffffff;
@@ -723,7 +713,7 @@ input[type=submit] {
 
 .load {
     margin: 71px auto 0;
-    background: url(img/refresh.png) no-repeat;
+    background: url(../img/refresh.png) no-repeat;
     width: 42px;
     height: 34px;
     color: #ffffff;
@@ -818,7 +808,7 @@ p.addressLA {
 .productmenu1 {
     margin-top: 50px;
     height: 71px;
-    background-image: url(img/header_back.jpg);
+    background-image: url(../img/header_back.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
