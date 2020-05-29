@@ -57,7 +57,7 @@ body {
 .fishnetChair {
     width: 500px;
     margin-top: 288px;
-    padding: 0 98px 0 0;
+    padding: 0 0 0 98px;
 }
 
 .fishnetChair h3 {
@@ -84,6 +84,7 @@ body {
     line-height: 24px;
     margin-bottom: 48px;
 }
+
 .fishnetChair a {
     display: block;
     color: #212121;
