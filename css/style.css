@@ -112,11 +112,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 100px;
 }
 
@@ -209,7 +209,7 @@ body {
     font-weight: 700;
     text-align: center;
     -webkit-transform: scaleX(1.0041);
-            transform: scaleX(1.0041);
+    transform: scaleX(1.0041);
     text-decoration: none;
 }
 
@@ -221,7 +221,7 @@ body {
     font-weight: 300;
     text-align: center;
     -webkit-transform: scaleX(1.0041);
-            transform: scaleX(1.0041);
+    transform: scaleX(1.0041);
     text-decoration: none;
     line-height: 100%;
     width: 206px;
@@ -321,7 +321,7 @@ body {
     line-height: 24px;
     text-align: left;
     -webkit-transform: scaleY(1.0022);
-            transform: scaleY(1.0022);
+    transform: scaleY(1.0022);
     margin-bottom: 34px;
 }
 
@@ -339,7 +339,7 @@ body {
     height: 46px;
     border-radius: 22px;
     -webkit-transform: scaleY(1.0022);
-            transform: scaleY(1.0022);
+    transform: scaleY(1.0022);
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -367,12 +367,13 @@ body {
 }
 
 .products {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products a {
+    margin-bottom: 30px;
 }
 
 /*slider*/
@@ -498,7 +499,7 @@ body {
     line-height: 24px;
     text-align: left;
     -webkit-transform: scaleY(1.0022);
-            transform: scaleY(1.0022);
+    transform: scaleY(1.0022);
     margin-bottom: 34px;
 }
 
@@ -516,7 +517,7 @@ body {
     height: 46px;
     border-radius: 22px;
     -webkit-transform: scaleY(1.0022);
-            transform: scaleY(1.0022);
+    transform: scaleY(1.0022);
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -624,8 +625,8 @@ body {
 
 .informationLinks {
     -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
 }
 
 .informationLinks li {
@@ -697,11 +698,11 @@ input[type=submit] {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 0 98px 38px;
     background-color: #f7f7f7;
 }
@@ -756,8 +757,8 @@ input[type=submit] {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .productmenu a {
@@ -804,8 +805,8 @@ input[type=submit] {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .contactCard {
@@ -820,7 +821,7 @@ input[type=submit] {
 
 .contactCard:hover {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -887,11 +888,11 @@ p.addressLA {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .productPageMenu li {
@@ -961,7 +962,7 @@ p.addressLA {
     font-weight: 700;
     line-height: 48px;
     -webkit-transform: scaleY(1.0005);
-            transform: scaleY(1.0005);
+    transform: scaleY(1.0005);
     margin-bottom: 36px;
 }
 
@@ -993,7 +994,7 @@ p.addressLA {
     font-weight: 300;
     line-height: 24px;
     -webkit-transform: scaleY(1.0005);
-            transform: scaleY(1.0005);
+    transform: scaleY(1.0005);
     text-align: left;
 }
 
@@ -1003,7 +1004,7 @@ p.addressLA {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin: 10px auto;
 }
