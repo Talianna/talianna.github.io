@@ -57,8 +57,7 @@ body {
 .fishnetChair {
     width: 500px;
     margin-top: 288px;
-    padding: 0px;
-    padding-left: 98px;
+    padding: 0 98px 0 0;
 }
 
 .fishnetChair h3 {
@@ -85,7 +84,6 @@ body {
     line-height: 24px;
     margin-bottom: 48px;
 }
-
 .fishnetChair a {
     display: block;
     color: #212121;
@@ -95,7 +93,7 @@ body {
     text-align: center;
     text-decoration: none;
     background: #ffffff;
-    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    box-shadow: 0 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     width: 212px;
     height: 45px;
     border-radius: 22px;
@@ -205,7 +203,7 @@ body {
     display: block;
     margin-top: 19px;
     color: #212121;
-    font-size: 21.91px;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
     -webkit-transform: scaleX(1.0041);
@@ -217,7 +215,7 @@ body {
     margin-top: 23px;
     display: block;
     color: #6c6c6c;
-    font-size: 13.94px;
+    font-size: 14px;
     font-weight: 300;
     text-align: center;
     -webkit-transform: scaleX(1.0041);
@@ -316,7 +314,7 @@ body {
 
 .exclusiveDesc p {
     color: #6c6c6c;
-    font-size: 13.99px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     text-align: left;
@@ -328,13 +326,13 @@ body {
 .exclusiveDesc a {
     display: block;
     color: #212121;
-    font-size: 17.99px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 46px;
     text-align: center;
     text-decoration: none;
     background: #ffffff;
-    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    box-shadow: 0 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     width: 212px;
     height: 46px;
     border-radius: 22px;
@@ -423,7 +421,7 @@ body {
     text-align: center;
     text-decoration: none;
     background: #ffffff;
-    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    box-shadow: 0 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     width: 212px;
     height: 45px;
     border-radius: 22px;
@@ -494,7 +492,7 @@ body {
 
 .productLgDesc p {
     color: #6c6c6c;
-    font-size: 13.99px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     text-align: left;
@@ -506,13 +504,13 @@ body {
 .productLgDesc a {
     display: block;
     color: #212121;
-    font-size: 17.99px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 46px;
     text-align: center;
     text-decoration: none;
     background: #ffffff;
-    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    box-shadow: 0 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     width: 212px;
     height: 46px;
     border-radius: 22px;
@@ -680,10 +678,9 @@ input[type=submit] {
     position: absolute;
     right: 0;
     color: #ffffff;
-    background: url(../img/send.png) no-repeat 10px 14px;
+    background: url(../img/send.png) no-repeat 10px 14px, #ffffff;
     border: none;
     cursor: pointer;
-    background-color: #ffffff;
     width: 46px;
     height: 44px;
     outline: none;
@@ -780,7 +777,7 @@ input[type=submit] {
 
 .load {
     margin: 71px auto 0;
-    background: url(../img/refresh.png) no-repeat;
+    background: url(../img/refresh.png) no-repeat, #ffffff;
     width: 42px;
     height: 34px;
     color: #ffffff;
@@ -788,7 +785,6 @@ input[type=submit] {
     border-width: 1px;
     border-color: #ffffff;
     border-style: solid;
-    background-color: #ffffff;
     cursor: pointer;
     outline: none;
 }
@@ -834,7 +830,7 @@ input[type=submit] {
     color: #212121;
     font-size: 22px;
     font-weight: 700;
-    line-height: 29.88px;
+    line-height: 30px;
     text-transform: uppercase;
     margin-top: 34px;
     margin-bottom: 23px;
