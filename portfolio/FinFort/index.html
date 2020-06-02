@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FinFort</title>
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="headerTop">
+                <a href="index.html">
+                    <img class="logo" src="img/logo_sm.png" alt="logo small">
+                </a>
+                <a href="tel:+74957893521">
+                    <p class="phone hidden">+7 495 789-35-21</p>
+                </a>
+                <a href="tel:+74957893521">
+                    <img class="visible phone" src="img/phone.png" alt="phone">
+                </a>
+            </div>
+            <div class="title" id="formOne">
+                <p class="hidden">Профессия Финансовый Консультант</p>
+                <h1>Стань экспертом и заработай на этом!</h1>
+            </div>
+            <div class="contactForm">
+                <form action="#">
+                    <div class="formTop">
+                        <input maxlength="30" type="text" name="name" placeholder="Имя*" required>
+                        <input type="tel" name="phone" placeholder="Номер телефона*" required>
+                        <input maxlength="30" type="email" name="mail" placeholder="Эл. почта*" required>
+                        <input type="text" name="city" placeholder="Ваш город*">
+                    </div>
+                    <div class="formBottom">
+                        <div class="resumeAndAgreement">
+                            <div class="resume">
+                                <img class="pinWhite" src="img/pin.png" alt="pin">
+                                <img class="hidden" src="img/pin_black.png" alt="pin_black">
+                                <a href="#">Прикрепить</a> резюме
+                            </div>
+                            <div class="agreement">
+                                <input type="checkbox" value="on" onchange="document.getElementById('submit').disabled = !this.checked" />
+                                <p>
+                                    Нажимая на кнопку, вы принимаете <a href="#">Положение</a> и <a href="#">Согласие</a> на обработку персональных данных
+                                </p>
+                            </div>
+                        </div>
+                        <a class="sendButton" href="#">Отправить заявку</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+
+    <main>
+        <section class="workWithUs">
+            <div class="container">
+                <h3>5 причин <span>работать у нас!</span></h3>
+                <div class="workInside">
+                    <div class="workUnit">
+                        <img class="bgWorkImg" src="img/home.png" alt="home">
+                        Корпоративный университет с бесплатным обучением
+                    </div>
+                    <div class="workUnit">
+                        <img class="bgWorkImg" src="img/wallet.png" alt="wallet">
+                        Высокий, стабильный доход
+                    </div>
+                    <div class="workUnit">
+                        <img class="bgWorkImg" src="img/plane.png" alt="plane">
+                        Перспектива карьерного роста
+                    </div>
+                    <div class="workUnit">
+                        <img class="bgWorkImg" src="img/star.png" alt="star">
+                        Уверенность в будущем
+                    </div>
+                    <div class="workUnit">
+                        <img class="bgWorkImg" src="img/heart.png" alt="heart">
+                        Новая востребованная профессия
+                    </div>
+                    <div class="workUnit unit6 record">
+                        <h6>Запишитесь на собеседование!</h6>
+                        Оставьте заявку прямо сейчас и получите работу мечты.
+                    </div>
+                </div>
+                <a class="sendButton" href="#formOne">Отправить заявку</a>
+                <div class="clear"></div>
+            </div>
+        </section>
+        <!--end workWithUs section-->
+
+        <section class="recruitment">
+            <div class="container">
+                <div class="recruitmentInside">
+                    <h3>Открыт набор новых <span>сотрудников</span></h3>
+                    <div class="desc">
+                        <p>
+                            В связи с расширением Компании, открыт набор новых сотрудников. Нам требуются активные, целеустремлённые люди с желанием хорошо зарабатывать. Навыки продаж будут плюсом, но главное желание продавать.
+                        </p>
+                        <br>
+                        <p>
+                            Мы предлагаем достойную заработную плату, которая выплачивается часто и в срок, хорошее обучение, которое останется с вами навсегда, дружный коллектив, возможность быстрого карьерного роста до Руководителя Группы и Директора Подразделения.
+                        </p>
+                    </div>
+                    <div class="recruitmentUnits">
+                        <div class="recruitmentUnit">
+                            <div class="unitHead">
+                                <h6>Обязанности:</h6>
+                            </div>
+                            <div class="unitContent">
+                                <ul>
+                                    <li> - Консультирование граждан по финансовым продуктам </li>
+                                    <li> - Составление личного финансового плана клиента</li>
+                                    <li> - Работа по "теплым" заявкам и активный поиск клиентов</li>
+                                    <li> - Проведение встреч с клиентами, оценка платежеспособности</li>
+                                    <li> - Сопровождение клиента после выдачи продукта; неограниченный доход</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="recruitmentUnit">
+                            <div class="unitHead">
+                                <h6>Требования:</h6>
+                            </div>
+                            <div class="unitContent">
+                                <ul>
+                                    <li> - Желание и умение помогать людям в грамотном финансовом планировании</li>
+                                    <li> - Опыт в активных продажах является Вашим преимуществом</li>
+                                    <li> - Желание и умение продавать</li>
+                                    <li>- Умение работать быстро в режиме многозадачности</li>
+                                    <li>- Ответственность, исполнительность </li>
+                                    <li>- Грамотная речь, активная жизненная позиция, коммуникабельность, инициативность, стрессоустойчивость, ответственность, порядочность, ориентация на клиента и результат, быстрая обучаемость</li>
+                                    <li>- Способность легко устанавливать контакты, находить правильный тон в общении </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="recruitmentUnit">
+                            <div class="unitHead">
+                                <h6>Условия:</h6>
+                            </div>
+                            <div class="unitContent">
+                                <ul>
+                                    <li>- Достойный неограниченный доход</li>
+                                    <li>- Прозрачная система мотивации</li>
+                                    <li>- Профессиональный и карьерный рост</li>
+                                    <li>- Внутреннее и внешнее обучение</li>
+                                    <li>- Полный рабочий день. 20% офис / 80% выезды к клиентам</li>
+                                    <li>- Заработная плата выплачивается без задержек и в полном объеме!</li>
+                                    <li>- Работа в крупной финансовой компании</li>
+                                    <li>- Интересные задачи, позволяющие профессионально развиваться</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="sendButton" href="#formOne">Отправить заявку</a>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+        <!--end recruitment section-->
+
+        <section class="financialLiteracy">
+            <div class="container">
+                <p class="financeTop">Рост заинтересованных россиян продуктами финансовой сферы 60% в год</p>
+                <h3>Финансовая <span>грамотность</span></h3>
+                <p>
+                    В рамках осуществления стратегии повышения финансовой грамотности в Российской Федерации на 2017—2023гг. согласно распоряжению правительства РФ от 25 сентября 2017г. № 2039-Р. И в исполнение постановления правительства Российской Федерации от 15 апреля 2014г. № 320 «Об утверждении государственной программы Российской Федерации «Управление государственными финансами и регулирование финансовых рынков». <br>Компания «Финфорт агентские сети» осуществляет комплекс мероприятий по повышению финансовой грамотности населения России.
+                </p>
+                <div class="financialQuestions">
+                    <img src="img/qw_mark.png" alt="qw_mark">
+                    <p>Люди постоянно интересуются вопросами, связанными с финансовыми продуктами, страхованием, кредитами. Особенно в такое стремительно развивающееся и турбулентное время.</p>
+                </div>
+                <div class="regions">
+                    <div class="lowLevel">
+                        <img src="img/pyramid_1.png" alt="pyramid_1">
+                        <p>
+                            В регионах с низким уровнем жизни людей больше всего волнуют <span>вопросы выживания</span>: как планировать семейный бюджет и какие финансовые продукты для этого необходимы, какие есть возможности реструктуризации и рефинансирования имеющихся кредитов.
+                        </p>
+                    </div>
+                    <div class="highLevel">
+                        <img src="img/pyramid_2.png" alt="pyramid_2">
+                        <p>
+                            В более зажиточных регионах фокус интересов другой: <span>как приумножить свои средства</span> на финансовом рынке, как грамотно инвестировать, как умело пользоваться налоговыми вычетами и прочими возможностями. </p>
+                    </div>
+                </div>
+                <a class="sendButton" href="#formOne">Отправить заявку</a>
+                <div class="clear"></div>
+            </div>
+        </section>
+        <!--end financialLiteracy section-->
+
+        <section class="succesAndStability">
+            <div class="container">
+                <div class="successAndStabilityInside">
+                    <h3>Успех и <span>стабильность</span></h3>
+                    <div class="successInside">
+                        <div class="successUnit">
+                            <img class="sucessImg" src="img/hands.png" alt="hands">
+                            <p>Социально значимая миссия</p>
+                        </div>
+                        <div class="successUnit">
+                            <img class="sucessImg" src="img/clock.png" alt="clock">
+                            <p>Своевременность</p>
+                        </div>
+                        <div class="successUnit">
+                            <img class="sucessImg" src="img/card.png" alt="card">
+                            <p>Высокий доход</p>
+                        </div>
+                        <div class="successUnit">
+                            <img class="sucessImg" src="img/algorithms.png" alt="algorithms">
+                            <p>Четкие алгоритмы работы</p>
+                        </div>
+                    </div>
+                    <a class="sendButton" href="#formOne">Присоединяйтесь прямо сейчас!</a>
+                </div>
+            </div>
+        </section>
+        <!--end succesAndStability section-->
+
+        <section class="callBack">
+            <div class="container">
+                <div class="callBackInside">
+                    <h5>Оставьте телефон и мы вам перезвоним для записи на собеседование!</h5>
+                    <div class="callBackForm">
+                        <form action="#">
+                            <input type="tel" name="phone" placeholder="Номер телефона*" required>
+                            <a class="sendButton" href="#">Перезвоните мне</a>
+                        </form>
+                        <p>Нажимая на кнопку, вы принимаете <a href="#">Положение</a> и <a href="#">Согласие</a> на обработку персональных данных.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end callBack section-->
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footerInside">
+                <img src="img/logo_big.png" alt="">
+                <p>
+                    © ООО «Финфорт агентские сети», 2020. Сайт не является публичной офертой и носит информационный характер. Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя.
+                </p>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+
+</body>
+
+</html>

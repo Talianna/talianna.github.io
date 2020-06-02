@@ -1,0 +1,135 @@
+header {
+    background-color: #a3abae;
+}
+
+main {
+    /* Чтобы занимал оставшееся пространство */
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+footer {
+    /* Чтобы footer не уменьшался */
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+
+.jumbotron {
+    background-color: #a3abae;
+    padding: 40px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .jumbotron {
+        padding: 30px 0;
+    }
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+}
+
+.jumbotron p {
+    color: white;
+    float: right;
+    font-style: italic;
+    margin-bottom: 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .jumbotron p {
+        font-size: 12px;
+    }
+}
+
+.jumbotron a {
+    text-decoration: none;
+}
+
+.menu {
+    margin: 30px auto;
+    margin-bottom: 30px;
+    width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #FFF;
+}
+
+.menu a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        width: 250px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: calc(100vh - 155px - 35px);
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+a.thumbnail {
+    color: #a3abae;
+}
+
+a.thumbnail.active,
+a.thumbnail:hover {
+    border-color: #a3abae;
+}
+
+a.thumbnail:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+a:focus,
+a:hover {
+    color: #a3abae;
+}
+
+.portfolioUnit img {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+footer {
+    text-align: center;
+    line-height: 35px;
+}
