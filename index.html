@@ -72,13 +72,13 @@
                                         {{ item.children.name }}
                                     </div>
 -->
-                                    <a href="#" class="dropDown__link">Меню</a>
-                                    <a href="#" class="dropDown__link">Меню</a>
-                                    <a href="#" class="dropDown__link">Меню</a>
-                                    <a href="#" class="dropDown__link">Меню</a>
-                                    <a href="#" class="dropDown__link">Меню</a>
-                                    <a href="#" class="dropDown__link">Меню</a>
-                                    <a href="#" class="dropDown__link">Меню</a>
+                                    <a href="#" class="dropDown__link">Меню Меню</a>
+                                    <a href="#" class="dropDown__link">Меню Меню</a>
+                                    <a href="#" class="dropDown__link">Меню Меню</a>
+                                    <a href="#" class="dropDown__link">Меню Меню</a>
+                                    <a href="#" class="dropDown__link">Меню Меню</a>
+                                    <a href="#" class="dropDown__link">Меню Меню</a>
+                                    <a href="#" class="dropDown__link">Меню Меню</a>
                                 </div>
 
                             </div>
@@ -119,6 +119,35 @@
                                     <a href="index.html">LOGOTYPE</a>
                                 </div>
                                 <span></span>
+
+                                <nav class="nav__item menu_mobile">
+
+                                    <div class="menu__dropdown" v-for="item of items" :item="item" @click="toggle">
+
+                                        <a class="menu__link" href="#">{{ item.name }}</a>
+                                        <div class="dropDown dropDown_mobile" v-show="isOpen" v-if="isFolder">
+                                            <!--                                    {{ item.children }}-->
+                                            <!--                                    {{ item.children.length }}-->
+                                            <!--
+                                    <div class="item" v-for="(child, index) in item.children" :key="index" :item="child">
+                                        {{ item.children.name }}
+                                    </div>
+-->
+                                            <a href="#" class="dropDown__link">Меню Меню</a>
+                                            <a href="#" class="dropDown__link">Меню Меню</a>
+                                            <a href="#" class="dropDown__link">Меню Меню</a>
+                                            <a href="#" class="dropDown__link">Меню Меню</a>
+                                            <a href="#" class="dropDown__link">Меню Меню</a>
+                                            <a href="#" class="dropDown__link">Меню Меню</a>
+                                            <a href="#" class="dropDown__link">Меню Меню</a>
+                                        </div>
+
+                                    </div>
+
+                                </nav>
+
+
+                                <!--
                                 <nav class="nav__item menu_mobile">
                                     <div class="menu__dropdown">
                                         <a class="menu__link" href="#">Меню</a>
@@ -193,6 +222,8 @@
                                         </div>
                                     </div>
                                 </nav>
+-->
+
                             </div>
                             <div class="mobileMenu__block">
                                 <div class="nav__item entrance entrance_mobile">
@@ -504,9 +535,9 @@
                                             <!--                                            <div v-if="error" class="contact contact_mess contact_footer"> {{ error }} </div>-->
                                             <div v-if="this.newsMail && !this.validEmail(this.newsMail)" class="contact contact_mess contact_footer">Некорректный email</div>
 
-                                            <div v-if="!this.newsMail" class="contact contact_mess contact_footer"> {{ error }} </div>
+                                            <div v-if="!this.newsMail" class="contact contact_mess contact_footer"> {{ newsMailErr }} </div>
                                             <!--                                            <div>-->
-                                            <input maxlength="30" type="email" name="email" required tabindex="1" placeholder="example@mail.com" v-model="newsMail" v-bind:class="[!error || newsMailIsValid ? activeClass : errorClass]">
+                                            <input maxlength="30" type="email" name="email" required tabindex="1" placeholder="example@mail.com" v-model="newsMail" v-bind:class="[!newsMailErr || newsMailIsValid ? activeClass : errorClass]">
                                             <!--</div>-->
                                             <!--</div>-->
 

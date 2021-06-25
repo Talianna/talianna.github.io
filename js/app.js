@@ -340,9 +340,9 @@ methods: {
         }
 
         if (!this.newsMail) {
-            this.error = 'Заполните поле';
+            this.newsMailErr = 'Заполните поле';
         } else {
-            this.error = null;
+            this.newsMailErr = null;
         }
     },
 
@@ -368,11 +368,11 @@ methods: {
     //     // console.log(el)
     // },
 
-    showDropdown(item) {
-        console.log(this.isShowDropdown);
-        this.isShowDropdown = !this.isShowDropdown
-        console.log(this.isShowDropdown);
-    },
+    // showDropdown(item) {
+    //     console.log(this.isShowDropdown);
+    //     this.isShowDropdown = !this.isShowDropdown
+    //     console.log(this.isShowDropdown);
+    // },
 
     // makeFolder: function (item) {
     //     Vue.set(item, "children", []);

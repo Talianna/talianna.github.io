@@ -303,6 +303,21 @@ a {
   padding-right: 40px;
   display: inline-block;
 }
+@media (max-width: 991px) {
+  .dropDown__link {
+    display: block;
+    padding-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .dropDown_mobile {
+    position: unset;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+  }
+}
 .entrance {
   font-weight: 600;
   font-size: 12px;
