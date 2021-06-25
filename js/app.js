@@ -30,63 +30,73 @@ let app = new Vue({
             // 'Medssdnu'
 
             {
-                name: "Menu",
+                name: "Menu"
+                ,
                 children: [{
-                    name: "Menu 1"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 1"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 1"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 1"
+                    name: "SubMenu"
                 }]
             }
             ,
             {
                 name: "Menu",
                 children: [{
-                    name: "Menu 2"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 2"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 2"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 2"
+                    name: "SubMenu"
                 }]
             }
             ,
             {
-                name: "Menu",
+                name: "Menu"
+                ,
                 children: [{
-                    name: "Menu 3"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 3"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 3"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 3"
+                    name: "SubMenu"
                 }]
             }
             ,
             {
-                name: "Menu",
+                name: "Menu"
+                ,
                 children: [{
-                    name: "Menu 4"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 4"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 4"
+                    name: "SubMenu"
                 }, {
-                    name: "Menu 4"
+                    name: "SubMenu"
+                }]
+            },
+            {
+                name: "Menu"
+                ,
+                children: [{
+                    name: "SubMenu"
+                }, {
+                    name: "SubMenu"
+                }, {
+                    name: "SubMenu"
+                }, {
+                    name: "SubMenu"
                 }]
             }
         ]
-        ,
-
-    isFolder: true,
-
-
-    isOpen: false
 
 },
 
@@ -148,21 +158,14 @@ methods: {
         }
     },
 
-
-    toggle: function () {
-        if (this.isFolder) {
-            this.isOpen = !this.isOpen;
-        }
+      toggle(el) {
+        el.hidden ? el.hidden = !el.hidden : this.$set(el, 'hidden', true);
+        // console.log(el)
     }
 
 },
 
 computed: {
-
-    // isFolder: function () {
-    //     return this.item.children && this.item.children.length;
-    // },
-
 
     nameIsValid() {
         return !!this.name && !this.invalidName(this.name);

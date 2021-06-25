@@ -26,60 +26,31 @@
                 </div>
             </div>
             <div class="header__nav">
-                <!--                <div class="header__dropdown hidden"></div>-->
                 <div class="wrapper">
                     <div class="header__content nav">
                         <div class="nav__item logo">
                             <a href="index.html">LOGOTYPE</a>
                         </div>
-                        <!--                        <ngb-navigation></ngb-navigation>-->
-
-                        <!--
-                        <transition name="fade">
-
-                            <ul v-if="show">
-                                <li v-for="item in items">{{ item }}</li>
-                            </ul>
-
-                        </transition>
--->
-
-
-                        <!--                        <tree-item class="item" :item="treeData" @make-folder="makeFolder" @add-item="addItem"></tree-item>-->
-
-                        <!--
-                        <li>
-                            <div :class="{bold: isFolder}" @click="toggle" @dblclick="makeFolder">
-                                {{ item.name }}
-                                <span v-if="isFolder">[{{ isOpen ? '-' : '+' }}]</span>
-                            </div>
-                            <ul v-show="isOpen" v-if="isFolder">
-                                <tree-item class="item" v-for="(child, index) in item.children" :key="index" :item="child" @make-folder="$emit('make-folder', $event)" @add-item="$emit('add-item', $event)"></tree-item>
-                                <li class="add" @click="$emit('add-item', item)">+</li>
-                            </ul>
-                        </li>-->
 
                         <nav class="nav__item menu">
 
-                            <div class="menu__dropdown" v-for="item of items" :item="item" @click="toggle">
+                            <div class="menu__dropdown" v-for="item of items" :item="item">
 
-                                <a class="menu__link" href="#">{{ item.name }}</a>
-                                <div class="dropDown" v-show="isOpen" v-if="isFolder">
+                                <a class="menu__link" href="#" @mouseover="toggle(item)">{{ item.name }}</a>
+                                <div class="dropDown" v-show="item.hidden">
                                     <!--{{ item.children }}-->
-                                    <!--{{ item.children.length }}-->
-
                                     <!--
-                                    <div class="item" v-for="(child, index) in item.children" :key="index" :item="child">
-                                        {{ item.children.name }}
+                                    <div class="item" v-for="(child, index) in item.children" :key="child.index" :item="child">
+                                        {{ item.children }}
                                     </div>
                                     -->
+
                                     <a href="#" class="dropDown__link">SubMenu</a>
                                     <a href="#" class="dropDown__link">SubMenu</a>
                                     <a href="#" class="dropDown__link">SubMenu</a>
                                     <a href="#" class="dropDown__link">SubMenu</a>
                                     <a href="#" class="dropDown__link">SubMenu</a>
-                                    <a href="#" class="dropDown__link">SubMenu</a>
-                                    <a href="#" class="dropDown__link">SubMenu</a>
+
                                 </div>
 
                             </div>
@@ -100,19 +71,17 @@
 
                                 <nav class="nav__item menu_mobile">
 
-                                    <div class="menu__dropdown" v-for="item of items" :item="item" @click="toggle">
+                                    <div class="menu__dropdown" v-for="item of items" :item="item">
 
-                                        <a class="menu__link" href="#">{{ item.name }}</a>
-                                        <div class="dropDown dropDown_mobile" v-show="isOpen" v-if="isFolder">
+                                        <a class="menu__link" href="#" @click="toggle(item)">{{ item.name }}</a>
+                                        <div class="dropDown dropDown_mobile" v-show="item.hidden">
 
                                             <!--
                                             <div class="item" v-for="(child, index) in item.children" :key="index" :item="child">
-                                                {{ item.children.name }}
+                                            
                                             </div>
                                             -->
 
-                                            <a href="#" class="dropDown__link">SubMenu</a>
-                                            <a href="#" class="dropDown__link">SubMenu</a>
                                             <a href="#" class="dropDown__link">SubMenu</a>
                                             <a href="#" class="dropDown__link">SubMenu</a>
                                             <a href="#" class="dropDown__link">SubMenu</a>
