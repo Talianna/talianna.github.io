@@ -10,6 +10,6 @@ $('.headSlider').slick({
     dots: true,
     appendDots: $('.itemNav__bullets'),
 
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3500
 });
