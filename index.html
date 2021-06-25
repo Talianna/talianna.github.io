@@ -111,14 +111,15 @@
                             <div><a href="#">Вход</a></div>
                         </div>
 
-                        <button class="menuButton">
-                        </button>
-                        <div class="mobileMenu slideRight hidden">
+                        <button class="menuButton" @click="showMenu = !showMenu"></button>
+                        <div class="mobileMenu " v-show="showMenu">
+                            <!--                           v-if="hideMenu"-->
+                            <!--                           slideRight-->
                             <div class="mobileMenu__block">
                                 <div class="nav__item logo logo_mobile">
                                     <a href="index.html">LOGOTYPE</a>
                                 </div>
-                                <span></span>
+                                <span @click="showMenu = !showMenu"></span>
 
                                 <nav class="nav__item menu_mobile">
 
@@ -612,9 +613,8 @@
     <!--slick-->
     <script src="libraries/slick/slick.min.js"></script>
 
-    <!--    <script src="js/script.js"></script>-->
     <script src="js/slider.js"></script>
-    <script src="js/mobMenu.js"></script>
+    <!--    <script src="js/mobMenu.js"></script>-->
 
 
 </body>

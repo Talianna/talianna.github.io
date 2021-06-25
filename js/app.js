@@ -127,6 +127,8 @@ let app = new Vue({
 
         // hello: 'Hello OOOO',
         show: false,
+        showMenu: false,
+        // hideMenu: true,
 
         // return {
         // form,
