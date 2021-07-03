@@ -3,7 +3,7 @@
     <nav class="nav__item menu">
 
         <!-- <div class="menu__dropdown"> -->
-        <div class="menu__dropdown" v-for="item of items" :key="item">
+        <div class="menu__dropdown" v-for="item of items" :key="item.id">
     
         <!-- <a class="menu__link" href="#" @mouseover="toggle(item)">{{ item.name }}</a> -->
         <a class="menu__link" href="#">{{ item.menuName }}</a>
@@ -49,22 +49,27 @@ export default {
                     // 'Medssdnu'
 
                     {
+                        id: 1,
                         menuName: "Menu1",
                         children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
                     },
                     {
+                        id: 2,
                         menuName: "Menu2",
                         children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
                     },
                     {
+                        id: 3,
                         menuName: "Menu3",
                         children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
                     },
                     {
+                        id: 4,
                         menuName: "Menu4",
                         children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
                     },
                     {
+                        id: 5,
                         menuName: "Menu5",
                         children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
                     }

@@ -1,10 +1,7 @@
 <template>
-  <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <div id="app">
 
-
-<header class="header">
+        <header class="header">
             <div class="header__topBar">
                 <div class="wrapper">
                     <div class="header__content">
@@ -20,27 +17,7 @@
                             <a href="index.html">LOGOTYPE</a>
                         </div>
 
-                        <header-menu/>
-                        <!-- <nav class="nav__item menu">
-                            <div class="menu__dropdown" v-for="item of items" :item="item">
-                                <a class="menu__link" href="#" @mouseover="toggle(item)">{{ item.name }}</a>
-                                <div class="dropDown" v-show="item.hidden">
-                                    {{ item.children }}-->
-                                    <!--
-                                    <div class="item" v-for="(child, index) in item.children" :key="child.index" :item="child">
-                                        {{ item.children }}
-                                    </div>
-                                    -->
-                                    <!-- <a href="#" class="dropDown__link">SubMenu</a>
-                                    <a href="#" class="dropDown__link">SubMenu</a>
-                                    <a href="#" class="dropDown__link">SubMenu</a>
-                                    <a href="#" class="dropDown__link">SubMenu</a>
-                                    <a href="#" class="dropDown__link">SubMenu</a>
-                                </div>
-                            </div>
-                        </nav> 
-                        
-                        -->
+                        <header-menu />
 
                         <div class="nav__item entrance">
                             <div><a href="#">Регистрация</a></div>
@@ -68,7 +45,7 @@
                                             </div>
                                             -->
 
-                                            <!-- <a href="#" class="dropDown__link">SubMenu</a>
+                        <!-- <a href="#" class="dropDown__link">SubMenu</a>
                                             <a href="#" class="dropDown__link">SubMenu</a>
                                             <a href="#" class="dropDown__link">SubMenu</a>
                                             <a href="#" class="dropDown__link">SubMenu</a>
@@ -80,7 +57,7 @@
                                 </nav>
                             </div> -->
 
-                            <!-- <div class="mobileMenu__block">
+                        <!-- <div class="mobileMenu__block">
                                 <div class="nav__item entrance entrance_mobile">
                                     <div><a href="#">Регистрация</a></div>
                                     <div><a href="#">Вход</a></div>
@@ -110,7 +87,8 @@
                                         <div class="sliderItem__tag">анимация</div>
                                         <h1 class="sliderItem__title">Подготовка спрайтов для анимации в Unity</h1>
                                         <p class="sliderItem__text">
-                                            Спрайты должны немного отличаться друг от друга, чтобы было заметно движение.
+                                            Спрайты должны немного отличаться друг от друга, чтобы было заметно
+                                            движение.
                                         </p>
                                     </div>
                                 </div>
@@ -168,7 +146,9 @@
                         <h3 class="about__title"><a href="#">о компании</a></h3>
                         <div class="about__text">
                             <p>
-                                Что-то более продвинутое делается с помощью покадровой анимации — когда для разных состояний объекта (стоит, идет, в прыжке, атакует) создается несколько спрайтов (двумерное изображение), которые сменяют друг друга с определенным интервалом.
+                                Что-то более продвинутое делается с помощью покадровой анимации — когда для разных
+                                состояний объекта (стоит, идет, в прыжке, атакует) создается несколько спрайтов
+                                (двумерное изображение), которые сменяют друг друга с определенным интервалом.
                             </p>
                             <a href="#">подробнее
                                 <img src="./assets/right_arrow.svg" alt="right_arrow">
@@ -231,45 +211,7 @@
                         </div>
                         <h4 class="mailing__title">подпишитесь на рассылку</h4>
 
-                        <contacting-form/>
-<!-- 
-                        <div class="mailing__form contactForm">
-
-                            <form id="mailingForm" method="POST" @submit.prevent="checkForm" novalidate="true">
-
-                                <div class="contactForm__fields">
-                                    <div>
-                                        <div v-if="this.invalidName(this.name)" class="contact contact_mess">Цифры в имени не допустимы</div>
-                                        <div v-if="!this.name" class="contact contact_mess"> {{ error }} </div>
-
-                                        <p class="contact"><label for="name">Имя</label></p>
-                                        <input id="name" maxlength="30" type="text" name="name" required tabindex="1" v-model="name" v-bind:class="[(!error || nameIsValid) ? activeClass : errorClass]">
-                                    </div>
-
-                                    <div>
-                                        <div v-if="this.email && !this.validEmail(this.email)" class="contact contact_mess">Некорректный email</div>
-                                        <div v-if="!this.email" class="contact contact_mess"> {{ error }} </div>
-
-                                        <input id="email" maxlength="30" type="email" name="email" required tabindex="2" placeholder="example@mail.com" v-model="email" v-bind:class="[!error || emailIsValid ? activeClass : errorClass]">
-                                    </div>
-                                </div>
-
-                                <div v-if="!messageIsValid" class="contact contact_mess"> {{ error }} </div>
-
-                                <textarea name="message" cols="30" rows="10" maxlength="400" tabindex="3" placeholder="Комментарии" required v-model="message" v-bind:class="[!error ||  messageIsValid ? activeClass : errorClass]"></textarea>
-
-                                <button class="button" type="submit" id="submit" value="подписаться" tabindex="4">подписаться</button>
-                            </form>
-
-                            <div class="checkedFields" v-if="allFieldsAreValid">
-                                Заявка отправлена
-                            </div>
-                            <div class="response" v-if="sendMEssage">
-                                <img src="./assets/done.svg" alt="done">
-                                Уважаемый {{ this.name }}, <br>
-                                спасибо за подписку!
-                            </div>
-                        </div> -->
+                        <contacting-form />
 
                     </div>
                 </div>
@@ -311,19 +253,8 @@
                                     </div>
                                     <div class="contacts__form">
                                         Подписка на новости
+                                        <mailing-form />
 
-                                        <mailing-form/>
-
-                                        <!-- <form id="mailingForm" class="mailingForm" method="POST" @submit.prevent="mailingForm" novalidate="true">
-
-                                            <div v-if="this.newsMail && !this.validEmail(this.newsMail)" class="contact contact_mess contact_footer">Некорректный email</div>
-                                            <div v-if="!this.newsMail" class="contact contact_mess contact_footer"> {{ newsMailErr }} </div>
-
-                                            <input maxlength="30" type="email" name="email" required tabindex="1" placeholder="example@mail.com" v-model="newsMail" v-bind:class="[!newsMailErr || newsMailIsValid ? activeClass : errorClass]">
-
-                                            <button class="button" type="submit" id="submitMailing" value="Ok" tabindex="2">Ok</button>
-
-                                        </form> -->
                                     </div>
                                 </div>
                             </div>
@@ -345,176 +276,40 @@
             </div>
         </footer>
 
-  </div>
+    </div>
+    
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue';
-import HeaderMenu from './components/HeaderMenu.vue';
-import ContactingForm from './components/ContactingForm.vue';
-import MailingForm from './components/MailingForm.vue';
+    // import HelloWorld from './components/HelloWorld.vue';
+    import HeaderMenu from './components/HeaderMenu.vue';
+    import ContactingForm from './components/ContactingForm.vue';
+    import MailingForm from './components/MailingForm.vue';
 
-export default {
-  name: 'App',
-  components: {
-    // HelloWorld,
-    HeaderMenu,
-    ContactingForm,
-    MailingForm
-  },
-    data () {
-        return {
-            show: false
+    export default {
+        name: 'App',
+        components: {
+            // HelloWorld,
+            HeaderMenu,
+            ContactingForm,
+            MailingForm
+        },
+        data() {
+            return {
+                show: false
+            }
         }
     }
-//   data () {
 
-//         show: false,
-//         // showMenu: false,
- 
-//         error: null,
-//         name: null,
-//         email: null,
-//         message: null,
-
-//         activeClass: 'active',
-//         errorClass: 'error',
-
-//         sendMEssage: false
-
-//         // newsMail: null,
-//         // newsMailErr: null,
-
-//       //  items :
-//       //   [
-//       //       // 'Menu',
-//       //       // 'gfgfg',
-//       //       // 'Mendsdsu',
-//       //       // 'Medsdnu',
-//       //       // 'Mdssenu',
-//       //       // 'Medssdnu'
-
-//       //       {
-//       //           name: "Menu",
-//       //           children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
-//       //       },
-//       //       {
-//       //           name: "Menu",
-//       //           children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
-//       //       },
-//       //       {
-//       //           name: "Menu",
-//       //           children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
-//       //       },
-//       //       {
-//       //           name: "Menu",
-//       //           children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
-//       //       },
-//       //       {
-//       //           name: "Menu",
-//       //           children: [{name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}, {name: "SubMenu"}]
-//       //       }
-//       //   ]
-// },
-
-// methods: {
-
-//     checkForm: function () {
-
-//         // const formIsValid = this.name && !this.invalidName(this.name) && this.email && this.validEmail(this.email) && this.message;
-//         const formIsValid = this.nameIsValid && this.emailIsValid && this.messageIsValid;
-
-//         if (formIsValid) {
-
-//             console.log('Form submitted');
-
-//             this.sendMEssage = true;
-
-//         } else {
-//             console.log('Invalid form');
-//         }
-
-//         if (!this.name) {
-//             this.error = 'Заполните поле';
-//         }
-
-//         if (!this.email) {
-//             this.error = 'Заполните поле';
-//         }
-
-//         if (!this.message) {
-//             this.error = 'Заполните поле';
-//         }
-//     },
-//     invalidName: function (name) {
-
-//         var re = /[0-9]+/;
-//         return re.test(name);
-
-//         // var re = /[a-zA-Zа-яА-ЯёЁ ]+/;
-//         // return re.test(name);
-//     },
-//     validEmail: function (email) {
-//         var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//         return re.test(email);
-//     },
-//     mailingForm: function () {
-
-//         const newsFormIsValid = this.newsMailIsValid;
-
-//         if (newsFormIsValid) {
-//             console.log('Form submitted');
-//         } else {
-//             console.log('Invalid form');
-//         }
-
-//         if (!this.newsMail) {
-//             this.newsMailErr = 'Заполните поле';
-//         } else {
-//             this.newsMailErr = null;
-//         }
-//     },
-
-//       toggle(el) {
-//         el.hidden ? el.hidden = !el.hidden : this.$set(el, 'hidden', true);
-//         // console.log(el)
-//     }
-
-// },
-
-// computed: {
-
-//     nameIsValid() {
-//         return !!this.name && !this.invalidName(this.name);
-//     },
-
-//     emailIsValid() {
-//         return !!this.email && !!this.validEmail(this.email);
-//     },
-
-//     messageIsValid() {
-//         return !!this.message;
-//     },
-
-//     allFieldsAreValid() {
-//         return !!this.name && !this.invalidName(this.name) && !!this.email && !!this.validEmail(this.email) && !!this.message;
-//     }
-
-//     // newsMailIsValid () {
-//     //     return !!this.newsMail && !!this.validEmail(this.newsMail);
-//     // }
-// }
-
-}
 </script>
 
 <style lang="less">
-// #app {
-//   font-family: Avenir, Helvetica, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-align: center;
-//   color: #2c3e50;
-//   margin-top: 60px;
-// }
+    // #app {
+    //   font-family: Avenir, Helvetica, Arial, sans-serif;
+    //   -webkit-font-smoothing: antialiased;
+    //   -moz-osx-font-smoothing: grayscale;
+    //   text-align: center;
+    //   color: #2c3e50;
+    //   margin-top: 60px;
+    // }
 </style>
