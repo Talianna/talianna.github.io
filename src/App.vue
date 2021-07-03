@@ -361,7 +361,12 @@ export default {
     HeaderMenu,
     ContactingForm,
     MailingForm
-  }
+  },
+    data () {
+        return {
+            show: false
+        }
+    }
 //   data () {
 
 //         show: false,
