@@ -104,7 +104,7 @@ function prepareGameField(){
 
 	let game_table = document.createElement("div");
 	game_table.setAttribute("id", "card-row");
-	
+
 	for(let i = 0; i < 21; i++){
 
         let image = document.createElement('div');
